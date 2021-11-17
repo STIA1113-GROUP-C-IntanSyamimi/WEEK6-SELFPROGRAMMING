@@ -1,0 +1,45 @@
+package selfProgramming;
+import java.util.Scanner;
+public class Exercise2 {
+
+	public static void main(String[] args) {
+		// To calculate electric charge based on usage using else if statement
+		//First 200 kWh (1-200) =20 cent/kWh
+		//Next 200 kWh (201-400)=40 cent/kWh
+		//Next 100 kWh (401-500)=60 cent/kWh
+		//Next  kWh onwards(501++)=100 cent/kWh
+		
+		double charge1;
+		double charge2;
+		double charge3;
+		double charge;
+		double totalcharge;
+	    Scanner sc= new Scanner(System.in);
+		System.out.println("Enter your usage of electricity");
+		int usage=sc.nextInt();
+		
+		if(usage<= 200) { 
+			charge1=usage*20;
+			totalcharge= charge1/100;
+			System.out.printf("Your charge is RM "+totalcharge );}
+		
+		else if(usage<=400) {
+			charge2= (usage-200)*40 +4000;
+			totalcharge= charge2/100;
+		    System.out.printf("Your charge is RM "+totalcharge);}
+		
+		else if(usage<=500) {
+			charge3= (usage-400)*60 +12000;
+			totalcharge= charge3/100;
+		    System.out.println("Your charge is RM "+totalcharge);}
+		
+		else if(usage>500){
+			charge= (usage-500)*100 +18000;
+			totalcharge= charge/100;
+		    System.out.println("Your charge is RM "+totalcharge);}
+
+		
+
+	}
+
+}
