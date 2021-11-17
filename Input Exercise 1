@@ -1,0 +1,27 @@
+public static void main(String[] args) {
+        
+    //To divide people stage of life based on age using else if statement
+	
+	Scanner sc=new Scanner(System.in);
+	
+	System.out.println("Please enter your age");
+	int age=sc.nextInt();
+	
+	if(age>= 60) 
+		System.out.println("You are Senior Adult ");
+	else if(age>=40) 
+	    System.out.println("You are Middle Age Adult ");
+	else if(age>=20) 
+	    System.out.println("You are Adult ");
+	else if(age>=13) 
+	    System.out.println("You are Teenager ");
+	else if(age>=5) 
+	    System.out.println("You are Child ");
+	else if(age>=2) 
+	    System.out.println("You are Toddler");
+	else
+	    System.out.println("You are Baby");
+
+	
+  }
+}	
